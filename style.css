@@ -1,7 +1,7 @@
 *{
 	margin: 0;
 	padding: 0;
-	font-family: sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 body{
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url('images/bg.jpg');
@@ -13,6 +13,7 @@ body{
 	background-color: #fff;
 	background-size: cover;
 	height: 100%;
+	
 }
 .sec-1 .bg-img{
 	margin-top: 3%;
@@ -34,7 +35,7 @@ nav li{
 }
 nav li a{
 	text-decoration: none;
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: 400;
 	color: #867979;
 }
@@ -87,8 +88,8 @@ nav .search{
 	padding: 15px 30px;
 }
 .menu-img img{
-	width: 300px;
-	height: 250px;
+	width: 100%;
+	height:350px;
 	border-bottom: 2px solid #40ba37;
 }
 .artic-2 .flex-img{
@@ -97,15 +98,46 @@ nav .search{
 	flex-direction: row;
 	flex-wrap: wrap;
 	margin-top: 3%;
+	margin-bottom: 50px;
+	
 }
 .flex-img .menu-img{
 	width: 30%;
-	margin-left: 3%;
+	margin-left: 2%;
 	margin-top: 40px;
+}
+.menu-img p{
+	text-align: center;
+	font-size: 15px;
+	margin-top: 10px;
 }
 .artic-2 h1{
 	text-align: center;
-	margin-top: 10%;
+	margin-top: 5%;
 	font-size: 40px;
 	color:#262626;
+	
+}
+.sec-2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: transparent;
+	width: 100%;
+	height: 75vh;
+	margin-bottom: 50px;
+}
+.flex-cont h1{
+	text-align: center;
+	font-size: 50px;
+	color: #fff;
+}
+.flex-cont p{
+	font-size: 18px;
+	color: #fff;
+}
+.flex-cont .btn{
+	display: inline-block;
+	margin-left:40%;
+
 }
