@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 	font-family: 'Poppins', sans-serif;
+	box-sizing: border-box;
 }
 body{
 	background-image:  linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.3)),url('images/bg.jpg');
@@ -113,6 +114,14 @@ nav .search{
 	font-size: 15px;
 	margin-top: 10px;
 }
+.menu-img .icon{
+	margin-left: 40%;
+}
+.menu-img i{
+	font-size: 12px;
+	color: #fbb710;
+	text-align: center;
+}
 .artic-2 h1{
 	text-align: center;
 	margin-top: 5%;
@@ -192,6 +201,7 @@ nav .search{
 	justify-content: center;
 	margin-top: 5%;
 	margin-left: 5%;
+	margin-bottom: 30px;
 }
 
 .flex-box{
@@ -207,10 +217,98 @@ nav .search{
 	padding: 40px 24px;
 	color: #3f3e3e;
 }
+.content1 h5{
+	text-align: center;
+	font-style: italic;
+	color: #3f3e3e;
+}
+.content1 span{
+	font-size: 50px;
+	color: #40ba37;
+}
+.content2 h1{
+	font-size: 25px;
+	color: gray;
+	margin-bottom: 20px;
+}
 .subscribe-img{
 	background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),url('images/food20.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
-	width: 100%;
-	height: 430px;
+	width:95%;
+	height: 390px;
+}
+.subscribe-form{
+	padding:40px 30px ;
 }	
+.subscribe-form input[type="text"]{
+	width: 350px;
+	height: 35px;
+	padding: 10px 10px;
+	background: #fff;
+	font-style: italic;
+	color: gray;
+	border-left: 3px solid #15f105;
+	outline: none;
+}
+.subscribe-form button{
+	width: 375px;
+	height: 50px;
+	background: rgb(64, 186, 55);
+	font-size: 16px;
+	font-weight: 600;
+	color: #fff;
+	border: 3px solid #40ba37;
+	outline: none;
+}
+.subscribe-form p{
+	color: #fff;
+	text-align: justify;
+	margin-top: 20px;
+	font-style: italic;
+}
+footer h1{
+	font-size: 30px;
+	margin-top: 30px;
+	margin-left: 50px;
+	margin-bottom: 20px;
+}
+footer .hover-effect{
+	display:flex;
+}
+.hover-effect img{
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+	transition: 500ms;
+}
+.img-container{
+	width: 225px;
+	height: 225px;
+	overflow: hidden;
+	position: relative;
+}
+.overlay{
+	width: 225px;
+	height: 225px;
+	position: absolute;
+	background:rgba(64,186,55,0.8);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	z-index: 1;
+	transition: 500ms;
+}
+.overlay p{
+	color: #fff;
+	font-size: 24px;
+}
+.img-container:hover .overlay{
+	opacity: 1;
+}
+.img-container:hover img{
+	transform: scale(1.3) rotate(2.5deg);
+}
+
+
